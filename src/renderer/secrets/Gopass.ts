@@ -48,6 +48,9 @@ export default class Gopass {
     }
 
     public static async getAllSecretNames(): Promise<string[]> {
+        //const flatSecrets = await Gopass.execute('list', ['--flat'])
+
+        // return flatSecrets.split(lineSplitRegex).filter(isDefined)
         return [
             'codecentric/cassandra/url',
             'codecentric/cassandra/username',
